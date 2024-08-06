@@ -1,7 +1,5 @@
 package SnakeGameLadderGame;
 
-
-
 import java.util.Random;
 
 public class SnakeLadderGame {
@@ -30,6 +28,9 @@ public class SnakeLadderGame {
                     break;
                 case 2:
                     position -= dieRoll;
+                    if(position <0) {
+                        position = 0;
+                    }
                     System.out.println("Snake : Move Back to Positon "+ position);
             }
 
